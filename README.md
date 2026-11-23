@@ -3,6 +3,7 @@
 Статический сайт-справочник по химии с отрисовкой линейных и структурных формул.
 
 **Сайт:** https://dzhem.github.io/chem-ref/
+
 **Исходники:** https://github.com/Dzhem/chem-ref
 
 - **Автор:** Dzhem
@@ -80,4 +81,5 @@ bundle exec jekyll serve --config _config.yml,_config.dev.yml
 - **Техническая часть** (структура проекта, подключение темы и CharChem, сборка и публикация) создана с помощью **MultiTool** (GigaChat 3.5 MoA).
 - **Just the Docs** — © Patrick Marsceill и участники проекта, MIT.
 - **CharChem / easyChem** — © PeterWin (peterwin@yandex.ru), http://charchem.org. Исходный код: https://github.com/Peter-Win/charchem2.ts.
+
 Автор указывает: система может быть использована бесплатно для целей науки и образования. При ином использовании условия уточняйте у автора.
