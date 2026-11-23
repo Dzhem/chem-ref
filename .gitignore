@@ -1,0 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+.gigatool/
+vendor/
+assets/js/charchem2.js.map
+_config.dev.yml

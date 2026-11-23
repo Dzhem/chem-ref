@@ -1,0 +1,41 @@
+title: Справочник по химии
+description: Учебный справочник с формулами CharChem
+
+# Project site: https://dzhem.github.io/chem-ref/
+url: "https://dzhem.github.io"
+baseurl: "/chem-ref"
+
+# remote_theme нужен GitHub Pages (плагин jekyll-remote-theme там встроен).
+# Локально он не работает без гема — для локальной сборки используйте
+#   bundle exec jekyll serve --config _config.yml,_config.dev.yml
+remote_theme: just-the-docs/just-the-docs
+
+lang: ru
+
+aux_links:
+  "GitHub": ["https://github.com/Dzhem/chem-ref"]
+aux_links_new_tab: true
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+
+color_scheme: light
+nav_sort: case_insensitive
+
+# Кнопка «Наверх» на длинных страницах
+back_to_top: true
+back_to_top_text: "Наверх"
+
+footer_content: "Справочник по химии. Формулы отрисовываются библиотекой CharChem."
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - .gigatool
