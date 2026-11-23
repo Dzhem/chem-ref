@@ -4,6 +4,6 @@ _site/
 .jekyll-metadata
 .bundle/
 .gigatool/
-vendor/
+/vendor/
 assets/js/charchem2.js.map
 _config.dev.yml
