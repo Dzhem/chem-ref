@@ -26,6 +26,9 @@ search:
 color_scheme: light
 nav_sort: case_insensitive
 
+# Тема ищет favicon только по site.favicon_ico или /favicon.ico в корне
+favicon_ico: "/assets/favicon.ico"
+
 # Кнопка «Наверх» на длинных страницах
 back_to_top: true
 back_to_top_text: "Наверх"
