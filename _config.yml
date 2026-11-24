@@ -23,6 +23,7 @@ search:
   preview_words_before: 5
   preview_words_after: 10
 
+# color_scheme: light
 color_scheme: light
 nav_sort: case_insensitive
 

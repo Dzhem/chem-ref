@@ -1,7 +1,201 @@
+/* ===== Палитра =====
+   фон #ffffff, панели #f5f8fc, текст #3d4655, заголовки #1a2334,
+   акцент #2b6cb0, акцент-светлый #e9f1fa, границы #dbe3ee
+*/
+
+body,
+div.opaque {
+    background-color: #ffffff;
+    color: #3d4655;
+}
+
+/* --- Левый сайдбар: контрастная панель --- */
+
+.side-bar {
+    background-color: #eef3f9;
+    border-right: 1px solid #dbe3ee;
+}
+
+/* Шапка сайдбара: тот же фон, что у сайдабара */
+.site-header {
+    background-color: transparent;
+    border-bottom: 1px solid #dbe3ee;
+}
+
+/* Название сайта: цвет как у остального сайдбара */
+.site-title,
+.site-title.lh-tight,
+.site-title.lh-tight:visited,
+.site-title.lh-tight:hover {
+    color: #3d4655;
+    background-image: none;
+    box-shadow: none;
+    font-weight: 600;
+    letter-spacing: .01em;
+}
+
+/* Ссылки вспомогательного меню (GitHub) */
+.aux-nav-list-item a,
+.aux-nav a {
+    color: #1f5fa8;
+}
+
+/* Пункты меню: подсветка при наведении */
+.nav-list-link,
+.nav-list .nav-list-item .nav-list-link {
+    color: #1f5fa8;
+    border-radius: 4px;
+    margin-right: .5rem;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+    background-color: #e2ebf6;
+    color: #1a2334;
+}
+
+.nav-list-link.active {
+    color: #1f5fa8;
+    background-image: linear-gradient(-90deg, #dbe8f8 0%, rgba(219, 232, 248, .6) 80%, rgba(219, 232, 248, 0) 100%);
+    border-radius: 4px;
+    /* box-shadow: inset 3px 0 0 #2b6cb0; */
+}
+
+/* --- Верхняя панель на мобильных --- */
+
+.main-header {
+    background-color: #1f3a5f;
+    border-bottom: 0;
+}
+
+.search-input {
+    background-color: #ffffff;
+    color: #3d4655;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-results {
+    background-color: #ffffff;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(26, 35, 52, .12);
+}
+
+.search-result-previews,
+.search-result-rel-url {
+    color: #6b7688;
+}
+
+/* --- Типографика --- */
+
+h1, h2, h3, h4, h5, h6, #toctitle,
+.site-title {
+    color: #1a2334;
+}
+
+.main-content {
+    line-height: 1.75;
+}
+
+.main-content > h1:first-child,
+.main-content h1:first-of-type {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: .6rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #dbe3ee;
+}
+
+.main-content h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    border-left: 4px solid #2b6cb0;
+    padding-left: .7rem;
+}
+
+.main-content h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #1f3a5f;
+}
+
+/* --- Ссылки --- */
+
+.main-content a,
+.main-content a:visited {
+    color: #1f5fa8;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(43, 108, 176, .3);
+}
+
+.main-content a:hover {
+    color: #2b6cb0;
+    border-bottom-color: #2b6cb0;
+}
+
+/* --- Таблицы: карточка + зебра --- */
+
+.table-wrapper {
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(26, 35, 52, .06);
+}
+
+th, td {
+    background-color: #ffffff;
+    border-left: 1px solid #dbe3ee;
+    border-bottom: 1px solid #eaf0f7;
+}
+
+.main-content thead th {
+    background-color: #f5f8fc;
+    color: #1a2334;
+    font-weight: 600;
+}
+
+.main-content tbody tr:nth-child(even) td,
+.main-content tbody tr:nth-child(even) th {
+    background-color: #fafcfe;
+}
+
+.main-content tbody tr:hover td,
+.main-content tbody tr:hover th {
+    background-color: #e9f1fa;
+}
+
+/* --- Код --- */
+
+code {
+    background-color: #f2f5fa;
+    border: 1px solid #dbe3ee;
+    color: #23446e;
+}
+
+pre.highlight,
+div.highlighter-rouge pre,
+div.listingblock div.content {
+    background-color: #f7fafd;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+}
+
+/* --- Блок формулы --- */
+
 .formula-frame {
     text-align: center;
-    padding: .8rem 1rem;
-    margin: 1rem 0;
-    border: 1px solid var(--border-color, #d0d4da);
-    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.2rem 0;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    background-color: #f7fafd;
+    box-shadow: 0 2px 8px rgba(26, 35, 52, .05);
+}
+
+/* --- Футер --- */
+
+.site-footer {
+    border-top: 1px solid #dbe3ee;
+    color: #6b7688;
 }
