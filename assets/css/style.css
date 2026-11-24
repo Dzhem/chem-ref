@@ -1,0 +1,7 @@
+.formula-frame {
+    text-align: center;
+    padding: .8rem 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color, #d0d4da);
+    border-radius: 6px;
+}
