@@ -1,3 +1,14 @@
 <link rel="stylesheet" href="{{ '/assets/css/charchem.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/katex/katex.min.css' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
 <script src="{{ '/assets/js/charchem2.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/katex/katex.min.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/katex/contrib/auto-render.min.js' | relative_url }}"
+        onload="renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$',  right: '$',  display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });"></script>
